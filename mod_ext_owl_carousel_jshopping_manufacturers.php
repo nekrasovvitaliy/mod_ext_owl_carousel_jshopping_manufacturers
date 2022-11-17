@@ -67,11 +67,12 @@
 	$ext_load_jquery			= (int)$params->get('ext_load_jquery', 1);
 	$ext_load_base				= (int)$params->get('ext_load_base', 1);
 	
-	$document->addCustomTag('<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/'.$ext_jquery_ver.'/jquery.min.js"></script>');
-	
-	
-	if ($ext_load_jquery  > 0)
+	// 
+	// 
+	if ($ext_load_jquery > 0)
 	{
+		$document->addCustomTag('<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/'.$ext_jquery_ver.'/jquery.min.js"></script>');
+	
 		$document->addCustomTag('<script type="text/javascript">
 		// 
 		// 
